@@ -1,0 +1,211 @@
+{% extends "parent.html" %}
+{% block body %}
+{% load static %}
+
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <style>
+    .container {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width:600px) {
+      .col-sm-6 .card {
+        width: 18rem;
+      }
+
+      #first img {
+        width: 280px;
+      }
+
+      #product .card {
+        margin: 10px;
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<div class="container">
+  <div class="row pt-5 pb-5" style="background-color: rgba(224, 218, 237, 0.378);">
+    <div class="col-sm-6 pt-5 px-5 pe-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      <h1 style="font-size: 60px; font-weight: 700; color: rgb(99, 8, 8);">Loving Care for Your Lifelong Companion <i
+          class="fa-solid fa-paw"></i> </h1>
+      <h2 class="pt-3 pb-3" style="font-family:cursive; font-weight:bold; font-size: 30px; color: black;">PAMPER YOUR
+        PET WITH OUR SERVICES</h2>
+      <p style="color: rgb(17, 6, 120); font-style: italic; font-weight: 500; font-size: 20px;">Whether you're a pet
+        groomer, a veterinarian, a pet sitter, or an animal shelter, our theme is meticulously crafted to cater to your
+        unique needs and aspirations.</p>
+      <a href="{%url 'crmapp:registration' %}" class="btn btn-primary"
+        style="background-color: brown; color: white; border: none;">Register Here</a>
+    </div>
+    <div class="col-sm-6 px-5" data-aos="fade-left">
+      <img src="{% static 'images/right3.png' %}" class="right" style=" border-radius: 20px;" width="60%">
+    </div>
+  </div>
+  <div class="row pt-5 px-4 bg-body-tertiary">
+    <div class="col-sm-6 pt-5" data-aos="fade-up" data-aos-duration="3000">
+      <h2
+        style="font-size: 45px; font-weight: bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: brown;"
+        class="pb-3 ">Why Choose Us?</h2>
+      <h1
+        style="font-size:60px; font-weight: bold; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+        We Give The Best <br>Care They Deserve. </h1>
+      <h4 class="pt-3">We are dedicated to providing exceptional and comprehensive care for your beloved pets. Our
+        mission is ensure that every pet feels loved & safe.</h4>
+    </div>
+    <div class="col-sm-6">
+      <div class="card-group mb-5 ">
+        <div class="card pt-5 pe-3" style=" color: white; border: transparent; background: transparent;"
+          data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <img src="{%static 'images/img1.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: brown;">
+            <h3 class="card-title" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">NAILS
+              TRIMMING</h3>
+            <p class="card-text">Reliable and caring pet service: grooming, walking, and boarding—ensuring your furry
+              friends' happiness and well-being.</p>
+          </div>
+        </div>
+        <div class="card pe-3" style="color:brown; border: transparent; background: transparent;" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+          <img src="{%static 'images/img3.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: white;">
+            <h3 class="card-title" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">PET
+              GROOMING</h3>
+            <p class="card-text">Reliable and caring pet service: grooming, walking, and boarding—ensuring your furry
+              friends' happiness and well-being</p>
+          </div>
+        </div>
+        <div class="card pt-5" style=" color: white; border: transparent; background: transparent;" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+          <img src="{%static 'images/img3.webp' %}" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: brown;">
+            <h3 class="card-title" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">PET
+              TRAINING</h3>
+            <p class="card-text">Reliable and caring pet service: grooming, walking, and boarding—ensuring your furry
+              friends' happiness and well-being.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="background-color: rgba(224, 218, 237, 0.378);" data-aos="fade-up">
+    <h2 class="text-center pt-5">Comprehensive care for your beloved pets.</h2>
+    <div class="row pt-5 px-5 pb-5 " style="text-align: center;">
+      <div class="col-sm-4 mb-3 px-5">
+        <div class="card" style="border: 1px solid brown;">
+          <img src="{%static 'images/well.svg' %}" class="card-img-top pt-3" alt="..." height="120px">
+          <div class="card-body">
+            <h5 class="card-title">Wellness Exams</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn" style="background-color: brown; color: white;">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 px-5 pb-3">
+        <div class="card" style="border: 1px solid brown;">
+          <img src="{%static 'images/vaccine.svg' %}" class="card-img-top pt-3" alt="..." height="120px">
+          <div class="card-body">
+            <h5 class="card-title">Vaccinations</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn" style="background-color: brown; color: white;">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 px-5">
+        <div class="card " style="border: 1px solid brown;">
+          <img src="{%static 'images/groom2.svg' %}" class="card-img-top pt-3" alt="..." height="120px">
+          <div class="card-body">
+            <h5 class="card-title">Grooming Services</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn" style="background-color: brown; color: white;">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row p-5 mx-auto" style="background-color: brown; color: white;" id="product" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
+      <h1 style="text-align: center;">Featured Pet Products</h1>
+      <div class="row pt-5 px-5 ">
+        <div class="card px-5 me-5 pt-2" style="width: 18rem;" data-aos="fade-up">
+          <img src="{% static 'images/trash.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body mx-auto text-center">
+            <h5 class="card-text text-center">Dog Trash Bag</h5>
+            <h5 class="price text-center" style="color: grey;">Rs.600</h5>
+            <a class="btn" style="background-color: brown; color: white;">Buy Now</a>
+          </div>
+        </div>
+        <div class="card px-5 me-5" style="width: 18rem;" data-aos="fade-up">
+          <img src="{% static 'images/pet.jpg' %}" class="card-img-top pt-2 " alt="...">
+          <div class="card-body mx-auto text-center">
+            <h5 class="card-text text-center">Pet Accessories</h5>
+            <h5 class="price text-center" style="color: grey;">Rs.1200</h5>
+            <a class="btn" style="background-color: brown; color: white;">Buy Now</a>
+          </div>
+        </div>
+        <div class="card px-5 me-5" style="width: 18rem;" data-aos="fade-up">
+          <img src="{% static 'images/food.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body mx-auto text-center">
+            <h5 class="card-text text-center">Dog Food</h5>
+            <h5 class="price text-center" style="color: grey;">Rs.800</h5>
+            <a class="btn" style="background-color: brown; color: white;">Buy Now</a>
+          </div>
+        </div>
+        <div class="card px-5" style="width: 18rem;" data-aos="fade-up">
+          <img src="{% static 'images/cloth.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body mx-auto text-center">
+            <h5 class="card-text text-center">Dog Clothes</h5>
+            <h5 class="price text-center" style="color: grey;">Rs.1800</h5>
+            <a class="btn" style="background-color: brown; color: white;">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5 body bg-body-tertiary " data-aos="zoom-in">
+      <h2 style="font-weight: bold; text-align: center;">Book a Appointment</h2>
+      <div class="row w-50 mx-auto pt-3" data-aos="fade-up" data-aos-duration="500">
+        <div class="col">
+          <label for="name" class="form-label">First Name </label>
+          <input type="text" placeholder="First Name" name="firstname" class="form-control">
+        </div>
+        <div class="col">
+          <label for="name" class="form-label">Last Name </label>
+          <input type="text" placeholder="Last Name" name="lastname" class="form-control">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+          <label for="contactno" class="form-label">Contact No.</label>
+          <input type="number" class="form-control" name="contactno" placeholder="Contact No.">
+        </div>
+
+        <div class="mb-3">
+          <label for="address" class="form-label">Enter Address</label>
+          <textarea class="form-control" rows="3" placeholder="Enter Your Address"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" checked style="background-color: brown;">
+          <label class="form-check-label">I agree to all <a href="#" style="color: brown;">Terms & conditions </a>
+          </label>
+        </div>
+        <a class="btn btn-primary w-25 mx-auto " type="submit"
+          style="background-color: brown; color: white; border: none;" onclick="login()">Submit</a>
+        <script>
+          function login() {
+            alert("Please login to continue");
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+  {% endblock body %}

@@ -1,0 +1,229 @@
+{% extends "parent.html" %}
+{% block body %}
+
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <style>
+    .col-sm-6 li {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width:600px) {
+      .img1 {
+        height: 500px;
+        padding-left: 80px;
+      }
+
+      .img2 {
+        display: none;
+      }
+
+      .img3 {
+        display: none;
+      }
+
+      .card-group {
+        display: inline-flex;
+        border: none;
+      }
+
+      #secimg {
+        display: none;
+      }
+
+      #thrimg {
+        display: none;
+      }
+
+      #firstimg {
+        width: 320px;
+      }
+    }
+  </style>
+</head>
+{% load static %}
+<h1 class="about text-center pt-5" style="font-size: 50px; background-color: brown; color: white; font-weight: 700;">
+  About us<br>
+  <i class="fa-solid fa-ellipsis text-center"
+    style="font-size: 40px; color: rgb(255, 255, 255); background-color: brown;"></i>
+</h1>
+<div class="row pt-5 px-4 mx-auto" data-aos="fade-up">
+  <div class="col-sm-6">
+    <div class="card-group mb-5 ">
+      <div class="card pt-5" style=" color: white; border: transparent; background: transparent;" data-aos="zoom-in">
+        <img src="{% static 'images/one.png' %}" class="card-img-top" alt="..." id="firstimg">
+      </div>
+      <div class="card " style="color:brown; border: transparent; background: transparent;" data-aos="zoom-in-up">
+        <img src="{%static 'images/two.png' %}" class="card-img-top" alt="" id="secimg">
+      </div>
+      <div class="card pt-5" style=" color: white; border: transparent; background: transparent;"
+        data-aos="zoom-out-left">
+        <img src="{%static 'images/three.png' %}" class="card-img-top" alt="..." id="thrimg">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6" data-aos="fade-left" style="background-color: rgba(200, 198, 198, 0.293); border-radius: 26px;">
+    <h3 class="pt-4 pb-4 px-4" style="color: black; font-size: 45px; font-weight: 700;">Committed to Your Pet's Health
+      and
+      Happiness</h3>
+    <ul>
+      <li>Expert Pet Care</li>
+      <li>Compassionate Veterinarians</li>
+      <li>State-of-the-Art Facilities</li>
+      <li>Transparent Pricing</li>
+    </ul>
+  </div>
+</div>
+<div class="row  mt-5 pb-5" data-aos="fade-up">
+  <h2 class="text-center pt-5" style="font-size: 35px;font-weight: 700;">Our Vision</h2>
+  <i class="fa-solid fa-ellipsis text-center" style="font-size: 50px;"></i>
+  <p style="font-size: 20px; text-align: center;" class="pt-2"></p>
+  <div class="col-sm-6" id="second" data-aos="fade-up-right">
+    <img src="{% static 'images/first.webp' %}" alt="" height="350px" class=" img1 pt-5">
+    <img src="{% static 'images/second.webp' %}" alt="" height="350px" class="img2">
+    <img src="{% static 'images/third.webp' %}" alt="" height="350px" class=" img3 pt-5">
+  </div>
+  <div class="col-sm-6 pt-5 bg-body-tertiary" data-aos="fade-left" style="border-radius: 40px;">
+    <p style="font-size: 20px;">Welcome to MAARC LABS, a veterinary clinic dedicated to providing exceptional care to
+      your beloved pets. Our team of expert doctors and staff are here to ensure your furry friends are healthy and
+      happy. At MAARC Labs, our vision is to revolutionize veterinary care through compassionate and innovative
+      services, becoming a trusted partner in the health and well-being of pets. We aim to set the standard for
+      veterinary excellence, foster strong community relationships, and promote responsible pet ownership.</p>
+    <button class="btn " style="background-color: brown; color: white;">View More</button>
+  </div>
+</div>
+<div class="row pt-5 pb-5 " data-aos="fade-up" style="background-color: brown; color: white;">
+  <h2 class="text-center" style="font-size: 40px;">Our Mission</h2>
+  <i class="fa-solid fa-ellipsis text-center pb-5" style="font-size: 50px; color: rgb(255, 255, 255);"></i>
+
+  <div class="col-sm-2 text-center mx-auto pt-2 pb-2" style="border: 1px solid rgb(255, 255, 255); font-size: 20px;"><i
+      class="fa-solid fa-arrow-up-right-dots pt-3 pb-3" style="font-size: 40px;"></i><br>Improving Your Pet's Quality of
+    Life</div>
+  <div class="col-sm-2 text-center mx-auto pt-2 pb-2" style="border: 1px solid rgb(255, 255, 255); font-size: 20px;"><i
+      class="fa-solid fa-chart-pie pt-3 pb-3" style="font-size: 40px;"></i><br>Ensuring Your Pet's Health & Hapiness
+  </div>
+  <div class="col-sm-2 text-center mx-auto pt-2 pb-2" style="border: 1px solid rgb(255, 255, 255); font-size: 20px;"><i
+      class="fa-regular fa-flag pt-3 pb-3" style="font-size: 40px;"></i><br>Providing Comprehensive Pet Care</div>
+  <div class="col-sm-2 text-center mx-auto pt-2 pb-2" style="border: 1px solid rgb(255, 255, 255); font-size: 20px;"><i
+      class="fa-solid fa-laptop pt-3 pb-3" style="font-size: 40px;"></i><br>Delivering Customer Friendly Services</div>
+</div>
+<div class="row pt-5 pb-5" data-aos="fade-up">
+  <h1 class="title text-center">Our Team</h1>
+  <h2 class="text-center" style="color: brown;">Compassionate care for your furry friends</h2>
+  <div class="col-sm-3">
+    <div class="card m-4" data-aos="zoom-in">
+      <img src="{% static 'images/dr1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgba(238, 203, 203, 0.664);">
+        <h4>Dr. Akanksha Sharma</h4>
+        <p style="color: brown; font-size: 20px; font-weight: bold;">CHIEF VETERINARIAN</p>
+        <p class="card-text">Dr. Akanksha has been practicing veterinary medicine for over 15 years. She is dedicated to
+          keeping your pets healthy and happy.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card m-4" data-aos="zoom-in">
+      <img src="{% static 'images/dr2.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgba(238, 203, 203, 0.664);">
+        <h4>Dr. Mayank Tondon</h4>
+        <p style="color: brown; font-size: 20px; font-weight: bold;">SURGEON</p>
+        <p class="card-text">Dr. Mayank is a skilled surgeon with a passion for helping animals. She performs complex
+          surgeries with precision and care.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card m-4" data-aos="zoom-in">
+      <img src="{%static 'images/doctor.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgba(238, 203, 203, 0.664);">
+        <h4>Dr. Surabhi</h4>
+        <p style="color: brown; font-size: 18px; font-weight: bold;">ANIMAL BEHAVIOR SPECIALIST</p>
+        <p class="card-text">Dr. Surabhi is an expert in animal behavior who helps pets overcome anxiety and other
+          issues. She also provides training for pet owners.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card m-4" data-aos="zoom-in">
+      <img src="{% static 'images/doc4.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgba(238, 203, 203, 0.664);">
+        <h4>Dr. Ishaan </h4>
+        <p style="color: brown; font-size: 20px; font-weight: bold;">VETERINARIAN</p>
+        <p class="card-text mt-3">Dr. Ishaan is a compassionate and experienced veterinarian who provides expert care for
+          pets of all ages</p>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-5 mx-auto" data-aos="fade-up">
+    <section>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+          <h3 class="mb-4" style="font-size: 35px;">Our Clients Experiences</h3>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            What Our Clients Say !!
+          </p>
+        </div>
+      </div>
+
+      <div class="row text-center d-flex align-items-stretch">
+        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+          <div class="card testimonial-card" data-aos="flip-left">
+            <div class="card-up" style="background-color: #9d789b;"></div>
+            <div class="avatar mx-auto bg-white pt-5">
+              <img src="{%static 'images/review1.jpg' %}" class="rounded-circle img-fluid" />
+            </div>
+            <div class="card-body">
+              <h4 class="mb-4">Shraddha Kapoor</h4>
+              <hr />
+              <p class="dark-grey-text mt-4">
+                <i class="fas fa-quote-left pe-2"></i>“Our family has been bringing our kitten to MAARC Labs for years.
+                The care and compassion they show every time are unmatched. Our pets always leave happy and healthy!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+          <div class="card testimonial-card" data-aos="flip-left">
+            <div class="card-up" style="background-color: #7a81a8;"></div>
+            <div class="avatar mx-auto bg-white pt-5">
+              <img src="{% static 'images/rev2.jpg' %}" class="rounded-circle img-fluid" / >
+            </div>
+            <div class="card-body">
+              <h4 class="mb-4">Radhika Madan</h4>
+              <hr />
+              <p class="dark-grey-text mt-4">
+                <i class="fas fa-quote-left pe-2"></i>MAARC LABS has been a lifesaver for my pets! The staff is
+                incredibly knowledgeable and compassionate. They took excellent care of my dog during a recent
+                emergency, and I couldn't be more grateful. Highly recommend them for all your veterinary needs!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 d-flex align-items-stretch">
+          <div class="card testimonial-card" data-aos="flip-left">
+            <div class="card-up" style="background-color: #6d5b98;"></div>
+            <div class="avatar mx-auto bg-white pt-5">
+              <img src="{% static 'images/review4.jpg' %}" class="rounded-circle img-fluid" />
+            </div>
+            <div class="card-body">
+              <h4 class="mb-4">Shakti Arora</h4>
+              <hr />
+              <p class="dark-grey-text mt-4">
+                <i class="fas fa-quote-left pe-2"></i>We've been bringing our cats to MAARC LABS for years, and we
+                couldn't be happier. The vets are always thorough and explain everything clearly. The clinic is clean,
+                and the entire team is so friendly. It's clear they genuinely care about animals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock body %}

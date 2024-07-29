@@ -1,0 +1,196 @@
+{% extends "parent.html" %}
+{% block body %}
+{% load static %}
+<head>
+<style>
+  @media only screen and (max-width:600px) {
+    .service {
+      width: 350px;
+    }
+  }
+</style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</head>
+<h1 class="text-center p-4" style="font-size: 50px; color: brown; font-weight: 700;"> Our Services</h1>
+<p class="text-center  p-4" style="font-size: 20px;" data-aos="fade-down">At Maarc Labs, we believe that your furry family members deserve
+  the best care. <br>Our team of expert veterinarians and technicians offer a wide range of services to keep your pets
+  healthy and happy.<br> Discover how we can help you today.</p>
+<div class="row mx-auto">
+  <div class="col-sm-6">
+    <img src="{% static 'images/service.webp' %}" alt="" class="service" width="90%" data-aos="fade-right"
+   >
+  </div>
+  <div class="col-sm-6 pt-5 mx-auto">
+    <h5>| Our services</h5>
+    <h2 style="font-size: 45px; font-weight: 700;" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">Comprehensive Pet Care, All Under One Roof</h2>
+    <p style="font-size: 20px;" class="mx-auto" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">At Maarc Labs, we understand the importance of quality veterinary care.
+      Our mission is to provide compassionate and comprehensive services to ensure the health and wellness of your pets.
+    </p>
+    <h6> Expert Pet Care</h6>
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar" style="width: 60%; background-color: brown;"></div>
+    </div><br>
+    <h6> Top Surgeons</h6>
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar" style="width: 75%; background-color: brown;"></div>
+    </div><br>
+    <h6> Transparent Pricing</h6>
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar" style="width: 50%; background-color: brown;"></div>
+    </div><br>
+    <h6> Compassionate Veterinarians</h6>
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar" style="width: 75%; background-color: brown;"></div>
+    </div><br>
+    <h6> Best Quality Products</h6>
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0"
+      aria-valuemax="100">
+      <div class="progress-bar" style="width: 100%; background-color: brown;"></div>
+    </div>
+  </div>
+  <div class="row" style="background-color: rgba(194, 190, 190, 0.245);" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
+    <h1 class="text-center pt-5" style="font-weight: 700;" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">High Quality Products</h1>
+    <h3 class="text-center pt-3 pb-5"
+      style="font-weight: 800; color: brown; font-family:Georgia, 'Times New Roman', Times, serif;" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"> Beacuse Your Furry
+      Family Friend Deserves the Best</h3>
+    <video src="{%static 'images/cat.mp4' %}" autoplay loop muted></video>
+    <div class="card-group mx-auto" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+      <div class="card m-4">
+        <img src="{%static 'images/catfood.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 20px;">Royal Canin Fit Adult Dry Cat Food <br><span
+              style="color: grey; font-size: 15px;">Royal Canin</span></p>
+          <h5 style="color: grey;"><s><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;5500 </s></h5>
+          <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;3500</h5>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card m-4">
+        <img
+          src="https://www.petsy.online/cdn/shop/products/3_2686a83b-547d-4be9-b3f8-fcc3f3ca0163_303x303.jpg?v=1637935900"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 20px;">M-Pets Voyager Wire Crate 2 Doors For Cats & Dogs<br><span
+              style="color: grey; font-size: 15px;">M-Pets</span></p>
+          <h5><s style="color: grey;"><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;10999 </s>
+            <i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;6299
+          </h5>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card m-4">
+        <img src="https://www.petsy.online/cdn/shop/products/1_303x303.png?v=1582040516" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 20px;">Cat's Best Cat Litter - Original (Clumping & Encapsulating Cat
+            Litter) <br><span style="color: grey; font-size: 15px;">Cats Best</span></p>
+          <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;999</h5>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card m-4">
+        <img
+          src="https://www.petsy.online/cdn/shop/products/Image_1_7befba89-015c-4f8e-9098-16ce8af02a61_303x303.jpg?v=1655273763"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 20px;">FOFOS Comfort Premium Outdoor Pet Carrier For Cats & Dogs
+            <br><span style="color: grey; font-size: 15px;">Fofos</span></p>
+          <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;4500</h5>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+        </div>
+      </div>
+      <div class="card m-4">
+        <img src="https://www.petsy.online/cdn/shop/products/Drools_303x303.jpg?v=1711547575" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <p class="card-text" style="font-size: 20px;">Drools Dry Cat Food - Ocean Fish<br>Buy One Get One Free !
+            <br><span style="color: grey; font-size: 15px;">Drools</span></p>
+          <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;315</h5>
+          <a href="#" class="btn btn-danger">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-5 text-center pb-5" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
+    <h1 class="pb-5" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">DOG SUPPLIES</h1>
+    <video src="{%static 'images/PLAY.mp4' %}" autoplay loop muted></video>
+  </div>
+  <div class="card-group mx-auto" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
+    <div class="card m-4">
+      <img src="https://pawsindia.com/cdn/shop/products/magicroller2_360x.jpg?v=1691225535" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;">Magic Roller Electronic Dog Ball <br><span
+            style="color: grey; font-size: 15px;">PAWSINDIA</span></p>
+        <h5 style="color: grey;"><s><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;1999 </s></h5>
+        <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;1499</h5>
+        <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card m-4">
+      <img src="https://pawsindia.com/cdn/shop/products/5_28_360x.jpg?v=1662616936" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;">Licks Peanut Butter For Dogs<br><span
+            style="color: grey; font-size: 15px;">M-Pets</span></p><br>
+        <h5><s style="color: grey;"><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;399</s>
+          <i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;299
+        </h5>
+        <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card m-4">
+      <img src="https://pawsindia.com/cdn/shop/products/BB_WB_GNT_CHK_03.jpg?v=1657624004" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;">Benebone's Wishbone Dog Chew (Chicken Flavor)<br><span
+            style="color: grey; font-size: 15px;">Benebone</span></p>
+        <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;999</h5>
+        <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card m-4">
+      <img
+        src="https://pawsindia.com/cdn/shop/files/tuxedofeatures_268db662-dec8-46c4-ab25-99fb788147fa.jpg?v=1712149546"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;">PawsIndia Black & White Tuxedo Bandana With Red Bow For Dogs
+          <br><span style="color: grey; font-size: 15px;">PAWSINDIA</span></p>
+        <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;4500</h5>
+        <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+    </div>
+    <div class="card m-4">
+      <img
+        src="https://goofytails.com/cdn/shop/products/1_96610d98-57d9-4cb1-b434-dc06573dcf13.jpg?v=1676116457&width=900"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" style="font-size: 20px;">Coffee Wood Chewing Stick for Dogs | Caffeine Free Training
+          Chewing Stick - Small Pack of 1 </p>
+        <h5><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;315</h5>
+        <a href="#" class="btn btn-danger">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock body %}
